@@ -1,0 +1,35 @@
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.awt.GridBagLayout;
+import javax.swing.ButtonGroup;
+import javax.swing.JFrame;
+import javax.swing.JRadioButton;
+import javax.swing.JPanel;
+import java.awt.GridLayout;
+import javax.swing.JLabel;
+import java.awt.GridBagConstraints;
+import javax.swing.JScrollBar;
+import javax.swing.JScrillPane;
+import java.awt.event.AdjustmentEvent;
+import java.awt.event.AdjustmentListener;
+public class TabbedPaneTest {
+    public static void main(String [] a) {
+        final JFrame frame = new JFrame();
+        frame.setSize(500, 500);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JScrollPane pane = new JScrollPane(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+
+        frame.setContentPane(pane);
+
+        SwingUtilities.invokeLater(new Runnable() 
+        {
+            @Override
+            public void run() 
+            {
+                frame.setVisible(true);
+            }
+        }
+        );
+    }
+}
