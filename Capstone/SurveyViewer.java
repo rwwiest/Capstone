@@ -7,7 +7,7 @@ public class SurveyViewer
         JFrame frame = new JFrame();
         frame.getContentPane().add(new Survey());
         
-        frame.setSize(1000, 1000);
+        frame.setSize(1500, 1000);
         frame.setTitle("Personality Survey");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
